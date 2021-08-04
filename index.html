@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <section class="container-form">
+            <div class="title-form">
+                <img src="https://image.flaticon.com/icons/png/512/2111/2111691.png" alt="twitch logo" id="img-logo">
+                <div id="title-description">
+                    <h1 id="title">Twitch affiliate register</h1>
+                    <p id="description">Sign up to join the twitch affiliate program</p>
+                </div>
+            </div>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Number of followers:</label>
+                    <input type="number" id="number" name="followers" placeholder="Followers" min="50" max="20000" required>
+                </div>
+                <div class="form-group">
+                    <label for="hours-week">How many hours do you spend on twitch per week?</label>
+                    <select name="hours-week" id="dropdown" required>
+                        <option disabled selected value>Select a option</option>
+                        <option value="2Hours">2 hours or less</option>
+                        <option value="3Hours">2 hours or more</option>
+                        <option value="8Hours">8 hours or more</option>
+                        <option value="12Hours">12 hours or more</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>You use another platform to broadcast?</p>
+                    <label><input type="radio" value="yes" name="another-platform" class="input-radio"/>Yes</label>
+                    <label><input type="radio" value="no" name="another-platform" class="input-radio" checked/>No</label>
+                </div>
+                <div class="form-group">
+                    <p>What category will your broadcast be?</p>
+                    <label for="gaming"><input type="checkbox" name="gaming" class="input-checkbox">Gaming</label>
+                    <label for="just-chating"><input type="checkbox" name="just-chating" class="input-checkbox">Just Chating</label>
+                    <label for="asmr"><input type="checkbox" name="asmr" class="input-checkbox">ASMR</label>
+                    <label for="phb"><input type="checkbox" name="phb" class="input-checkbox">Pool, hot tubs and beaches</label>
+                    <label for="others"><input type="checkbox" name="others" class="input-checkbox">Others</label>
+                </div>
+                <div class="form-group">
+                    <p id="title-textarea">Why do you want to be an affiliate?</p>
+                    <textarea name="comment" id="why-affiliate" placeholder="Enter your answer here..."></textarea>
+                </div>
+                <div class="form-group" id="submit-button">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>This is no an official twitch page. &copy;2021.Designed by <a href="https://github.com/ticojch">Ticojch</a></footer>
+</body>
+</html>

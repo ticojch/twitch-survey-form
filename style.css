@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;500&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    font-family:Georama, sans-serif;
+    font-size: 18px;
+    font-weight:300;
+}
+
+html{
+    background-color:#262626;
+}
+
+body{
+    min-height:100vh;
+    display:grid;
+    grid-auto-rows: 1fr auto;
+}
+
+main{
+    margin: 10px;
+}
+
+label{
+    display: flex;
+    align-items:center;
+}
+
+.container-form{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top:50px;
+    background-color: #6441a5;
+    box-shadow: -1px 2px 21px -3px rgba(0,0,0,0.77);
+    border-radius: 10px;
+    display:grid;
+}
+
+#img-logo{
+    width:100px;
+}
+
+.title-form{
+    background-color:#f1f1f1;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    display:grid;
+    grid-template-columns: 100px auto;
+    column-gap: 10px;
+}
+
+@media (max-width:500px){
+    .title-form{
+        /* background-color:#4b4b4b; */
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px auto;
+        column-gap: 20px;
+    }
+
+    #img-logo{
+        max-width: 90px;
+        justify-self: center;
+    }
+}
+
+#title{
+    font-size: 1.7em;
+}
+
+#title-description{
+    text-align:center;
+    align-self: center;
+}
+
+#title-description p{
+    font-size:1.2em;
+    color:#6441a5;
+    font-weight:200;
+}
+
+#survey-form{
+    display: grid;
+    padding: 30px;
+}
+
+.form-group{
+    margin: 15px;
+}
+
+#name,
+#email,
+#number{
+    padding: 10px;
+    margin-top: 5px;
+    border: hidden;
+    min-width: 98%;
+    border-radius: 4px;
+}
+
+#dropdown{
+    padding: 10px;
+    margin-top: 5px;
+    border: hidden;
+    min-width: 300px;
+    max-width: 800px;
+    border-radius: 4px;
+}
+
+.input-radio, 
+.input-checkbox{
+    display: inline-block;
+    margin-right: 0.625rem;
+    margin-top: 10px;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+#title-textarea{
+    margin-bottom:5px;
+}
+
+#why-affiliate{
+    width: 100%;
+    resize: vertical;
+    border-radius: 7px;
+    min-height: 100px;
+}
+
+#submit-button{
+    justify-self:center;
+}
+
+#submit{
+    padding: 5px;
+    width: 100px;
+    border-radius:20px;
+    border:hidden;
+}
+
+#submit:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    box-shadow: 3px 4px 5px 1px rgba(0,0,0,0.53);
+}
+
+footer{
+    color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    color: #f1f1f1;
+}
